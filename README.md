@@ -1,4 +1,4 @@
-# angular-portal
+# Angular Portal
 
 Inspired by [Ryan Florence talk about portals in React](https://youtu.be/z5e7kWSHWTg?t=15m21s),
 and by the implementation of [portal-vue](https://github.com/LinusBorg/portal-vue).
