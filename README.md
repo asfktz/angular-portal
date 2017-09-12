@@ -5,10 +5,11 @@ and by the implementation of [portal-vue](https://github.com/LinusBorg/portal-vu
 
 This angular 1 component allows you to detach some part of your component's view and render it in some other part of the DOM.
 
-It can be used to simplify the creation of other components, such as popups and tooltips in a declarative manner.
 
+## 
+It can be used as a building block for creating other components on top of it, such as popups and tooltips, in a declarative manner.
 
-Usage:
+## Usage:
 
 ```html
 <div>
