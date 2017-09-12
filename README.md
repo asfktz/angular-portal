@@ -1,7 +1,7 @@
 # angular-portal
 
 Inspired by [Ryan Florence talk about portals in React](https://youtu.be/z5e7kWSHWTg?t=15m21s),
-and the implementation of [portal-vue](https://github.com/LinusBorg/portal-vue).
+and by the implementation of [portal-vue](https://github.com/LinusBorg/portal-vue).
 
 This angular 1 component allows you to detach some part of your component's view and render it in some other part of the DOM.
 
