@@ -13,14 +13,18 @@
     <div class="main">
       <div ng-controller="mainCtrl as $ctrl">
        <div>
-          <h3>Append Portal to the side</h3>
-          <input type="text" ng-model="$ctrl.value">
-          <button ng-click="$ctrl.isOpen = !$ctrl.isOpen">Toggle</button>
-
+          <h3>Angular Portal: Basic example</h3>
+          <div>
+            <p>The Scope of your component is available inside the portal</p>
+            <p>Try changing this value for example:</p>
+            <input type="text" ng-model="$ctrl.value">
+            <button ng-click="$ctrl.isOpen = !$ctrl.isOpen">Toggle</button>
+          </div>
+          
           <portal to="side" ng-if="$ctrl.isOpen">
             <div class="box">  
               <button class="box__close" ng-click="$ctrl.isOpen = false">X</button>
-              <div>{{$ctrl.value}}</div>
+              <div class="box__content">{{$ctrl.value}}</div>
             </div>
           </portal>
         </div>

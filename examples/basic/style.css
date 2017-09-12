@@ -6,12 +6,23 @@ body {
   min-height: 100%;
   display: flex;
   margin: 0;
+  font-family: arial, sans-serif;
 }
 
 .container {
   display: flex;
   flex: 1;
   margin: 10px;
+}
+.main {
+  flex: 2;
+  font-size: 20px;
+}
+
+.side {
+  position: relative;
+  flex: 1;
+  border: 2px solid #000;
 }
 
 .box {
@@ -23,14 +34,19 @@ body {
   background: rgba(0,0,0,0.2);
   margin: 10px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.main {
-  flex: 2;
+.box__close {
+  margin-right: auto;
 }
 
-.side {
-  position: relative;
+.box__content {
+  flex-direction: column;
   flex: 1;
-  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
