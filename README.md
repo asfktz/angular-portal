@@ -22,7 +22,7 @@ Usage:
 ```
 
 ```html
-<!-- Somewhere around the DOM -->
+<!-- Somewhere around the DOM (you portal will be rendered inside it) -->
 <portal-target name="target"></portal-target>
 ```
 
