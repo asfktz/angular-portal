@@ -33,4 +33,5 @@ It can be used as a building block for creating other components on top of it, s
 - use `<portal detach="false" .. />` to keep the portal's content in place
 
 ---
-**Todo:** documentation & examples
+## Todo:
+- documentation & examples
