@@ -7,7 +7,7 @@ This angular 1 component allows you to detach some part of your component's view
 
 
 ## Why:
-It can be used as a building block for creating other components on top of it, such as popups and tooltips,
+It can be used as a building block for creating other components on top of it, such as a popup or a tooltip,
 <br> in a declarative manner.
 
 ## Usage:
