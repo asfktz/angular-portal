@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" defer></script>
+  <script src="../../portal.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body ng-app="app">
+  <div class="container">
+    <div class="main">
+      <div ng-controller="mainCtrl as $ctrl">
+       <div>
+          <h3>Append Portal to the side</h3>
+          <input type="text" ng-model="$ctrl.value">
+          <button ng-click="$ctrl.isOpen = !$ctrl.isOpen">Toggle</button>
+
+          <portal to="side" ng-if="$ctrl.isOpen">
+            <div class="box">  
+              <button class="box__close" ng-click="$ctrl.isOpen = false">X</button>
+              <div>{{$ctrl.value}}</div>
+            </div>
+          </portal>
+        </div>
+      </div>
+    </div>
+
+    <div class="side">
+      <portal-target name="side"></portal-target>
+    </div>
+  </div>
+</body>
+</html>

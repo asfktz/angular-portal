@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+}
+
+.box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0,0,0,0.2);
+  margin: 10px;
+  padding: 10px;
+}
+
+.main {
+  flex: 2;
+}
+
+.side {
+  position: relative;
+  flex: 1;
+  border: 2px solid #ddd;
+}
