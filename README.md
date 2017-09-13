@@ -24,7 +24,7 @@ It can be used as a building block for creating other components on top of it, s
 ```
 
 ```html
-<!-- Somewhere around the DOM (you portal will be rendered inside it) -->
+<!-- Somewhere around the DOM (your portal will be rendered inside it) -->
 <portal-target name="target"></portal-target>
 ```
 
