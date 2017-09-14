@@ -33,9 +33,7 @@ Set the `to` attribue on your portal to the name of the target:
 <portal to="name" name="moon"></portal-target>
 ```
 
-
-- Portals' default target is the bottom of the body
-- use `<portal detach="false" .. />` to keep the portal's content in place
+- Use `detach="false"` to keep the portal in its original place
 
 ## Why:
 It can be used as a building block for creating other components on top of it, such as a popup or a tooltip,
