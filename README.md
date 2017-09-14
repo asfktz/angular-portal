@@ -25,12 +25,12 @@ You can also specify an alternative target, other the the bottom of the body
 
 Add a target wherever you wish your portal to be and give it a unique name:
 ```html
-<portal-target name="target"></portal-target>
+<portal-target name="moon"></portal-target>
 ```
 
 Set the `to` attribue on your portal to the name of the target:
 ```html
-<portal to="name" name="target"></portal-target>
+<portal to="name" name="moon"></portal-target>
 ```
 
 
