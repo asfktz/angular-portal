@@ -8,31 +8,33 @@
   <script src="../../portal.js" defer></script>
   <script src="app.js" defer></script>
 </head>
-<body ng-app="app">
-  <div class="container">
+<body ng-app="app" ng-cloak>
+  <div class="container" ng-controller="mainCtrl as $ctrl">
     <div class="main">
-      <div ng-controller="mainCtrl as $ctrl">
-       <div>
-          <h3>Angular Portal: Basic example</h3>
-          <div>
-            <p>The Scope of your component is available inside the portal</p>
-            <p>Try changing this value for example:</p>
-            <input type="text" ng-model="$ctrl.value">
-            <button ng-click="$ctrl.isOpen = !$ctrl.isOpen">Toggle</button>
-          </div>
-          
-          <portal to="side" ng-if="$ctrl.isOpen">
-            <div class="box">  
-              <button class="box__close" ng-click="$ctrl.isOpen = false">X</button>
-              <div class="box__content">{{$ctrl.value}}</div>
+      <section class="intro">
+        <h1 class="intro__title">Angular Portal</h1>
+        <p class="intro__text">{{$ctrl.text}}</p>
+        <button class="intro__btn" ng-click="$ctrl.isOpen = !$ctrl.isOpen">Open a Portal !</button>
+      </section>
+        
+      <portal ng-if="$ctrl.isOpen">
+        <div class="popup">  
+          <div class="popup__overlay" ng-click="$ctrl.isOpen = false"></div>
+          <div class="popup__content">
+            <button class="popup__close" ng-click="$ctrl.isOpen = false"></button>
+            <div>
+              <section class="popup__wow">
+                <p>
+                  This portion of your component's view is now <br>
+                  rendered at the bottom of the body
+                </p>
+                <p>And it's scope is also available here!</p>
+              </section>
+              <textarea class="popup__input" ng-model="$ctrl.text"></textarea>
             </div>
-          </portal>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="side">
-      <portal-target name="side"></portal-target>
+      </portal>
     </div>
   </div>
 </body>

@@ -1,3 +1,12 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
 html {
   height: 100%;
 }
@@ -25,28 +34,123 @@ body {
   border: 2px solid #000;
 }
 
-.box {
+.popup {
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
   top: 0;
-  background: rgba(0,0,0,0.2);
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.box__close {
-  margin-right: auto;
-}
-
-.box__content {
-  flex-direction: column;
-  flex: 1;
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.popup__overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.popup__close {
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: gold;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: -10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+  outline: none;
+  transition: transform 0.1s ease-in-out;
+}
+
+.popup__close:hover {
+  transform: scale(1.2);
+}
+
+.popup__close:active {
+  transform: scale(1.1);
+}
+
+.popup__close:before,
+.popup__close:after {
+  content: '';
+  width: 60%;
+  height: 4px;
+  background: #FFF;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+}
+
+.popup__close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup__close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popup__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-size: 30px;
+  width: 600px;
+  /*height: 300px;*/
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.popup__wow {
+  font-size: 20px;
+  text-align: center;
+}
+
+.popup__input {
+  width: 70%;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.intro__title {
+  font-size: 42px;
+}
+
+.intro__text {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.intro__btn {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  background: #00BCD4;
+  color: #FFF;
 }

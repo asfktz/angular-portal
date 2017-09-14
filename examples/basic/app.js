@@ -1,8 +1,10 @@
-(function(angular) {
-  angular.module('app', ['portal']).controller('mainCtrl', function() {
-    var $ctrl = this;
+var app = window.angular.module('app', ['portal']);
 
-    $ctrl.isOpen = true;
-    $ctrl.value = 'I am on the other side!';
-  });
-})(window.angular);
+app.controller('mainCtrl', function($timeout) {
+  var $ctrl = this;
+
+  $ctrl.isOpen = false;
+  $ctrl.counter = 0;
+
+  $ctrl.text = 'Try changing this text from within the portal';
+});
