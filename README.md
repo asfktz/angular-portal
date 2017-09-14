@@ -9,10 +9,10 @@ This angular 1 component allows you to detach some part of your component's view
 
 ```html
 <div>
-  <input type="text" ng-model="$ctrl.value">
+  <input type="text">
 
-  <portal to="target" ng-if="$ctrl.isOpen">
-     <!-- you component scope is available here -->
+  <portal to="target">
+    <!-- This div will be rendered at the bottom of the body -->
      <div>{{$ctrl.value}}</div>
   </portal>
 </div>
