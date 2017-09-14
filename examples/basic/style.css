@@ -16,6 +16,8 @@ body {
   display: flex;
   margin: 0;
   font-family: arial, sans-serif;
+  background: hsl(60, 30%, 94%);
+  overflow: hidden;
 }
 
 .container {
@@ -48,12 +50,14 @@ body {
 }
 
 .popup__overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
+  animation: fade-in 0.5s;
+  will-change: transform;
 }
 
 .popup__close {
@@ -115,6 +119,31 @@ body {
   position: relative;
   box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
   text-align: center;
+  border-radius: 2px;
+  animation: scale-in 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), fade-in 0.3;
+  will-change: transform;
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .popup__wow {
@@ -153,4 +182,11 @@ body {
   cursor: pointer;
   background: #00BCD4;
   color: #FFF;
+  border-radius: 2px;
+  outline: none;
+  transition: transform 0.1s ease-in-out;
+}
+
+.intro__btn:active {
+  transform: scale(0.95);
 }

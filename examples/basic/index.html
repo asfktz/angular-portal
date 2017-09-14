@@ -14,7 +14,7 @@
       <section class="intro">
         <h1 class="intro__title">Angular Portal</h1>
         <p class="intro__text">{{$ctrl.text}}</p>
-        <button class="intro__btn" ng-click="$ctrl.isOpen = !$ctrl.isOpen">Open a Portal !</button>
+        <button class="intro__btn" ng-click="$ctrl.isOpen = !$ctrl.isOpen">Open a Portal!</button>
       </section>
         
       <portal ng-if="$ctrl.isOpen">
@@ -28,7 +28,7 @@
                   This portion of your component's view is now <br>
                   rendered at the bottom of the body
                 </p>
-                <p>And it's scope is also available here!</p>
+                <p>And its scope is also available here!</p>
               </section>
               <textarea class="popup__input" ng-model="$ctrl.text"></textarea>
             </div>
