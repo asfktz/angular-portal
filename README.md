@@ -5,6 +5,8 @@ and by the implementation of [portal-vue](https://github.com/LinusBorg/portal-vu
 
 This angular 1 component allows you to detach some part of your component's view and render it in some other part of the DOM.
 
+<img src="./showoff.gif">
+
 
 ## Why:
 It can be used as a building block for creating other components on top of it, such as a popup or a tooltip,
