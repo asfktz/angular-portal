@@ -21,6 +21,7 @@ This angular 1 component allows you to detach some part of your component's view
 <img src="./showoff.gif">
 
 
+
 ```html
 <!-- Somewhere around the DOM (your portal will be rendered inside it) -->
 <portal-target name="target"></portal-target>
