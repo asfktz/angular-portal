@@ -20,12 +20,19 @@ This angular 1 component allows you to detach some part of your component's view
 
 <img src="./showoff.gif">
 
+### Specify a diffrent target
+You can also specify an alternative target, other the the bottom of the body
 
-
+Add a target wherever you wish your portal to be and give it a unique name:
 ```html
-<!-- Somewhere around the DOM (your portal will be rendered inside it) -->
 <portal-target name="target"></portal-target>
 ```
+
+Set the `to` attribue on your portal to the name of the target:
+```html
+<portal to="name" name="target"></portal-target>
+```
+
 
 - Portals' default target is the bottom of the body
 - use `<portal detach="false" .. />` to keep the portal's content in place
