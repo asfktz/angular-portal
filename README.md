@@ -12,7 +12,7 @@ This angular 1 component allows you to detach some part of your component's view
   <input type="text" ng-model="$ctrl.value">
 
   <portal to="target">
-    <!-- This div will be rendered at the bottom of the body -->
+    <!-- This content of the portal will be rendered at the bottom of the body -->
      <div>{{$ctrl.value}}</div>
   </portal>
 </div>
