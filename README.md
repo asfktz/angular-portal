@@ -173,7 +173,7 @@ Yoy can also specify a different target:
 
 ....
 
-<!-- Somewhere around the DOM (your portal will be rendered inside it) -->
+<!-- Somewhere around the DOM -->
 <portal-target name="otherTarget"></portal-target>
 ```
 
