@@ -81,7 +81,7 @@ It will also prevent the popup from inheriting unwanted css properties from the 
 
 It will work, and in some cases this is the way to go.
 But we lost a few things along the way:
-* We lost out ability to declare our popup in a declarative manner, instead we call with an imperative API.
+* We lost the ability to declare our popup in a declarative manner, instead we call with an imperative API.
 * We no longer have easy access to our $scope.
  
 
