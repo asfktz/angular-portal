@@ -77,15 +77,15 @@ $ctrl.openLoginPopup = function () {
 ```
 
 The service will render the popup at the bottom of the body which will solve the positioning problem. <br>
-It will also prevent the popup from inheriting unwanted css properties from the header.
+It will also prevent the popup from inheriting unwanted CSS properties from the header.
 
-It will work, and in some cases this is the way to go.
+It will work, and in some cases, this is the way to go.
 But we lost a few things along the way:
-* We lost the ability to declare our popup in a declarative manner, instead we call with an imperative API.
+* We lost the ability to declare our popup in a declarative manner. Instead, we call with an imperative API.
 * We no longer have easy access to our $scope.
  
 
-This is where portals come to the rescue. With a portal, we can specify that a part of the view should be rendered somewhere else in the DOM,
+This is where portals come handy. With a portal, we can specify that a part of our view should be rendered somewhere else in the DOM,
 in our case, the bottom of the body:
 
 ```html
@@ -110,7 +110,7 @@ in our case, the bottom of the body:
 </body>
 ```
 
-Which result in:
+Which results in:
 
 ```html
 <body>
@@ -136,7 +136,7 @@ Which result in:
 ```
 
 - Portals are unopinionated, they are behavior-only components and have no style.
-- A portal serve as a low-level component, <br>
+- A portal serves as a low-level component, <br>
 use it to build other components such as popups, tooltips and sliding sidebars
 
 Here is an example of a popup made with angular-portal ([try it yourself](https://github.com/asfktz/angular-portal/tree/master/examples/basic)):
