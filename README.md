@@ -47,7 +47,7 @@ Problem solved. Until, someone put `position: relative` on the `header`:
 
     <!--
       Oh-oh.. Your positioned absolute popup is now messed up!
-      It's not longer positioned relative to the body, but to the header.
+      It's no longer positioned relative to the body, but to the header instead.
       This is not what we want.
     -->
     <div class="popup" ng-if="$ctrl.isOpen">
