@@ -76,7 +76,7 @@ $ctrl.openLoginPopup = function () {
 };
 ```
 
-The servie will render the popup at the bottom of the body which will solve the positioning problem. <br>
+The service will render the popup at the bottom of the body which will solve the positioning problem. <br>
 It will also prevent the popup from inheriting unwanted css properties from the header.
 
 It will work, and in some cases this is the way to go.
